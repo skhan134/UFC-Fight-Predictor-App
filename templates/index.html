@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fighter Matchup Predictor</title>
+    <!-- Ensure correct path to your CSS file -->
+    <link rel="stylesheet" href="static/css/styles.css"> <!-- Adjust path if necessary -->
+</head>
+
+<body>
+    <header>
+        <h1 class="title">UFC Fighter Matchup Predictor</h1>
+    </header>
+  
+    <section class="matchup-container">
+        <div class="division-selector">
+            <label for="division">Select Division:</label>
+            <!-- Correct placement of <option> elements inside the <select> -->
+            <select id="division">
+                <option value="Strawweight">Strawweight</option>
+                <option value="Flyweight">Flyweight</option>
+                <option value="Featherweight">Featherweight</option>
+                <option value="Welterweight">Welterweight</option>
+                <option value="Middleweight">Middleweight</option>
+                <option value="Light Heavyweight">Light Heavyweight</option>
+                <option value="Heavyweight">Heavyweight</option>
+            </select>
+        </div>
+    
+        <div class="fighter-selector">
+            <label for="fighter1">Select Fighter 1:</label>
+            <div class="dropdown-container" id="fighter1-dropdown">
+                <input type="text" id="fighter1-search" placeholder="Search Fighter 1..." />
+                <ul id="fighter1-list" class="dropdown-list"></ul>
+            </div>
+
+            <label for="fighter2">Select Fighter 2:</label>
+            <div class="dropdown-container" id="fighter2-dropdown">
+                <input type="text" id="fighter2-search" placeholder="Search Fighter 2..." />
+                <ul id="fighter2-list" class="dropdown-list"></ul>
+            </div>
+        </div>
+    
+        <div class="prediction-button">
+            <button onclick="predictMatchup()">Predict Matchup</button>
+        </div>
+    </section>
+
+    <section class="prediction-results">
+        <h2>Prediction Result</h2>
+        <div id="prediction-result">Select fighters to see the prediction</div>
+    </section>
+
+    <!-- Correct path to your JavaScript file -->
+    <script src="static/js/scripts.js"></script> <!-- Adjust path if necessary -->
+</body>
+</html>
